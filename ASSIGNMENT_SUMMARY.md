@@ -8,7 +8,7 @@ Preserve and commit the supplied Triangle.py and TestTriangle.py, expand only th
 
 ## 2. Author
 
-Dillon DeGuzman — confirm your preferred name before submission.
+Dillon DeGuzman
 
 ## 3. Summary
 
@@ -24,13 +24,17 @@ The original implementation passed 19 of 81 tests. It produced 50 assertion fail
 
 “Defects Found” counts distinct causes, not failed cases. All seven were identified through initial testing plus code inspection; some downstream defects were masked by earlier checks. “Defects Fixed” counts repairs applied since the preceding run. Initial exceptions count as unsuccessful executions in the report, while unittest distinguishes errors from assertion failures.
 
-### Reflection — complete in your own words
+### Reflection
 
-[Describe what you personally learned, what worked, and what did not. Useful observations from these results: an early validation defect can hide downstream defects; passing invalid-input tests alone does not establish correctness; side-order permutations expose assumptions about parameter positions. Review and explain the changes yourself before submitting.]
+The results demonstrate that an early validation defect can hide several later classification defects. The starter examples detected a problem but did not cover enough input categories to explain every defect. Boundary cases, invalid types, and side-order permutations made the expanded suite more effective. Code inspection complemented testing by exposing downstream conditions masked by the first failing guard. Reusing the same suite after targeted repairs provided a direct before-and-after comparison. All 81 tests passing supports the repaired behavior for the tested categories, although a finite suite does not prove correctness for every possible input.
 
 ## 5. Honor pledge
 
-[Insert the exact pledge required by your course and sign it yourself only if accurate. Disclose AI assistance as required by your instructor. Code, tests, and report were prepared with Codex assistance; do not represent that assistance as unaided work.]
+I honor that I have abided by the Stevens Honor System
+
+Dillon DeGuzman
+
+Assistance disclosure: Codex assisted with preparing the code changes, tests, and report.
 
 ## 6. Detailed results
 
@@ -256,4 +260,4 @@ Repository name: **hw-06b**. Intended GitHub location: https://github.com/Dillon
 - originals/: untouched downloaded source and starter tests.
 - Git history: original code commit, expanded-tests/initial-results commit, then repair/final-results commit.
 
-Before submission, complete the reflection and honor pledge, confirm the author name, and ensure the instructor can access the repository. Upload the required files to the course submission system and provide the repository name/link. Course-site submission is not performed by this repository.
+Before submission, review the report and ensure the instructor can access the repository. Upload the required files to the course submission system and provide the repository name/link. Course-site submission is not performed by this repository.
